@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to App</title>
+ 
+</head>
+
+
+<body>
+
+
+  <div class="container">
+    <p class="text-center display-4">Vaccination</details></p>
+
+    <div class="row">
+      <div class="col-6 offset-3">
+          <div class="card">
+              <div class="card-header">
+                  <h4 class="text-center">Registration Details</details></h4>
+              </div>
+              <div class="card-body">
+
+
+    <form action="/patient/creation" method="POST">
+        <!-- name -->
+        <div class="form-group">
+          <div class="row">
+              <div class="col-2">
+      
+        <label for="name" style="font-weight: 500;">Name : </label>
+        </div>
+        <div class="col-10">
+        <input type="text" name="name" id="name" placeholder="Patient's name.." />
+      </div>
+    </div>
+</div>
+
+
+        <br />
+        <!-- DOB -->
+        <div class="form-group">
+          <div class="row">
+              <div class="col-3">
+        <label for="DOB" style="font-weight: 500;">Date of Birth :</label>
+      </div>
+      <div class="col-9">
+        <input type="date" name="DateOfBirth" id="dob" />
+      </div>
+    </div>
+</div>
+       
+
+        <br/>
+        <!-- Gender -->
+        <div class="form-group">
+          <div class="row">
+              <div class="col-3">
+        <label for="gender" style="font-weight: 500;">Gender :</label>
+      </div>
+      <div class="col-9">
+        <select name="Gender" id="gender">
+        <option value="-">-</option> 
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+</div>
+
+        <br/>
+        <!-- Place of Birth -->
+        <div class="form-group">
+          <div class="row">
+              <div class="col-3">
+        <label for="pob" style="font-weight: 500;">Place of Birth : </label>
+      </div>
+      <div class="col-9">
+        <input type="text" name="PlaceOfBirth" id="pob" placeholder="Place of Birth..."/>
+      </div>
+    </div>
+</div>
+
+        <br />
+        <!-- Blood Group -->
+        <div class="form-group">
+          <div class="row">
+              <div class="col-3">
+        <label for="bloodGroup" style="font-weight: 500;">Blood Group :</label>
+      </div>
+      <div class="col-9">
+        <select name="BloodGroup" id="bloodGroup">
+        <option value="-">-</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        </select>
+      </div>
+    </div>
+</div>
+
+        <br/>
+        <!-- Height -->
+        <div class="form-group">
+          <div class="row">
+              <div class="col-3">
+        <label fo="height" style="font-weight: 500;">Height :</label>
+      </div>
+      <div class="col-9">
+        <input type="number" name="Height" id="height" oninput="validity.valid||(value='')" placeholder="Height"/>
+      </div>
+    </div>
+</div>
+
+        <br/>
+        <!-- Weight -->
+        <div class="form-group">
+          <div class="row">
+              <div class="col-3">
+        <label fo="Weight" style="font-weight: 500;">Weight :</label>
+      </div>
+      <div class="col-9">
+        <input type="number" name="Weight" id="weight" oninput="validity.valid||(value='')" placeholder="Weight"/>
+      </div>
+    </div>
+</div>
+        <br/>
+
+        <br/>
+
+
+        <!-- button -->
+       
+          <div class="row">
+              <div class="col-6">
+        <button type="submit" id="save" class="btn btn-primary btn-block" >Save</button>
+      </div>
+      <div class="col-6">
+      <button type="reset" id="cancel"class="btn btn-danger btn-block" >Cancel</button>
+      </div>
+  </div>
+       
+    </form>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+   
+
+</body>
+</html>
